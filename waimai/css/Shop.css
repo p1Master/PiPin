@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+h3,h5{
+    font-weight: normal;
+}
+.head{
+    height: 2.6rem;
+    background-image: url("../img/Shop/nav.png");
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.24rem;
+}
+.head .nav{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav i{
+    font-size: 0.5rem;
+    line-height: 0.88rem;
+    color: #ffffff;
+}
+.nav a{
+    display: flex;
+}
+.nav .ibox{
+    display: flex;
+    justify-content: flex-end;
+}
+.ibox i{
+    margin-left: 0.2rem;
+}
+.head .shopName{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+.shopName .logo{
+    width: 1.8rem;
+    height: 1.67rem;
+    background: antiquewhite;
+    border-radius: 0.1rem;
+    overflow: hidden;
+    background-image: url("../img/index/图层1@2x.png");
+    background-size: 2rem 1.67rem;
+    background-position: -0.1rem;
+}
+.shopName .shopNameR{
+    flex-grow: 1;
+    padding-left: 0.2rem;
+    padding-bottom: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.shopNameR h3{
+    width: 100%;
+    height: auto;
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.shopNameR p{
+    width: 5rem;
+    height: 0.3rem;
+    font-size: 0.24rem;
+    margin-top: 0.1rem;
+    color: #ffffff;
+    /* css中超出部分变省略号*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.shopNameR .kk{
+    width: auto;
+    height: 0.4rem;
+    display: flex;
+    margin-top: 0.1rem;
+}
+.kk .green{
+    border: 0.01rem solid #42be66;
+    box-sizing: border-box;
+    font-size: 0.2rem;
+    color: #42be66;
+    text-align: center;
+    line-height: 0.3rem;
+    padding: 0 0.05rem;
+    margin-right: 0.1rem;
+}
+.kk .yellow{
+    border: 0.01rem solid #fbf553;
+    border-radius: 0.1rem;
+    box-sizing: border-box;
+    font-size: 0.2rem;
+    color: #fbf553;
+    text-align: center;
+    line-height: 0.3rem;
+    padding: 0 0.1rem;
+    margin-right: 0.1rem;
+}
+.jianmianTS{
+    height: 0.6rem;
+    padding: 0.22rem 0.24rem 0;
+    display: flex;
+}
+.jianmianTS .jian {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: red;
+    color: #ffffff;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.jianmianTS p{
+    font-size: 0.3rem;
+    margin-left: 0.1rem;
+}
+.feature{
+    width: 100%;
+    height: 0.68rem;
+    border-bottom: 0.03rem solid #d5d5d5;
+    box-sizing: border-box;
+    padding: 0 0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+.feature li{
+    width: 2rem;
+    height: 0.68rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.68rem;
+    color: #5a5858;
+    position: relative;
+}
+/*利用伪元素Before实现元素底部线条*/
+.feature li.l:before{
+    content: '';
+    position: absolute;
+    bottom: 0.03rem;
+    width: 0.6rem;
+    height: 0.06rem;
+    border-radius: 0.05rem;;
+    background: #00ff9c;
+}
+.shopArea{
+    height: auto;
+    padding: 0 0.24rem;
+    display: flex;
+    flex-direction: row;
+}
+.shopArea .shopFiciton{
+    width: 2rem;
+    height:auto;
+}
+.shopFiciton li{
+    display: block;
+    width: 100%;
+    height: 0.9rem;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    color: #7c7c7c;
+    /*border-bottom: 0.01rem solid #efefef;*/
+    /*box-sizing: border-box;*/
+}
+.shopFiciton li.l{
+    color: #000000;
+    font-weight: bold;
+}
+.shopArea .shopFiciton i{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    color: #ffffff;
+    margin-right: 0.2rem;
+}
+.shopFiciton .red{
+    background: red;
+}
+.shopFiciton .orange{
+    background: #ff6700;
+}
+
+.shopArea .shop{
+    flex-grow: 1;
+}
+.shop .shopFicitonName{
+    width:100%;
+    height: 0.4rem;
+    font-size: 0.3rem;
+}
+.shop .sp{
+    width: 100%;
+    height: 1.41rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    position: relative;
+}
+.sp a{
+    flex-grow: 1;
+    display: flex;
+}
+a img{
+    display: inline-block;
+    width: 1.59rem;
+    height: 1.41rem;
+}
+a .spR{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2rem;
+}
+.spR h3{
+    font-size: 0.3rem;
+}
+.spR p{
+    width: 2.8rem;
+    height: 0.3rem;
+    font-size: 0.2rem;
+    color: #aeaeae;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.spR .payNum{
+    font-size: 0.2rem;
+    color: #aeaeae;
+}
+.spR .price{
+    font-size: 0.3rem;
+    color: #e80113;
+}
+.sp buttom{
+    width: auto;
+    height: 0.4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    display: flex;
+    font-size: 0.3rem;
+}
+buttom .icon-jian{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    color: #00ff9c;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.4rem;
+}
+buttom .icon-jiahao{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    color: #000000;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.4rem;
+    background: #00ff9c;
+    border-radius: 50%;
+    margin: 0 0.05rem;
+}
+buttom p{
+    line-height: 0.4rem;
+}
+.tab{
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    z-index: 999;
+}
+.tab .tabL{
+    width: 5.9rem;
+    height: 100%;
+    background: #4e4e4e;
+    position: relative;
+}
+.tabL li{
+    font-size: 0.3rem;
+    line-height: 0.98rem;
+    margin-left: 1.5rem;
+    color: #828282;
+}
+.tab a{
+    height: 100%;
+    width: 1.6rem;
+    background: #8d8c8c;
+    font-size: 0.3rem;
+    line-height: 0.98rem;
+    text-align: center;
+}
+.tab .go{
+    background: #00ff9c;
+    color: #000000;
+}
+.icon-gouwuchekong{
+    position: fixed;
+    left: 0.5rem;
+    bottom: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    background: #8d8c8c;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    z-index: 999;
+}
+.gouwuchel{
+    background: #00ff9c;
+}
+.totalNum{
+    position: fixed;
+    left: 1.2rem;
+    bottom: 1rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    z-index: 999;
+    font-size: 0.3rem;
+    background: red;
+    text-aligen:center;
+    color: #ffffff;
+}
+.shopPayList{
+    width: 100%;
+    height: auto;
+    background: #faf6f4;
+    position: fixed;
+    bottom: 0.98rem;
+}
+.shopPayList .shoptop{
+    width: 100%;
+    height: 0.3rem;
+    background: #ff6700;
+    display: flex;
+    justify-content: space-between;
+}
+.shoptop .box{
+    width: 0.12rem;
+    height: 100%;
+    background: #00ff9c;
+    margin-right: 0.12rem;
+    justify-content: flex-start;
+}
+.shoptop li{
+    font-size: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.shoptop i{
+    font-size: 0.2rem;
+    color: #cecccc;
+}
+.shopPayList .payList{
+    width: 100%;
+    height: 3.88rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.payList .koudaibox{
+    display: flex;
+    flex-direction: row;
+}
+.payList .box{
+    height: 1rem;
+    border-bottom: 0.02rem solid #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.24rem;
+    line-height: 1rem;
+    position: relative;
+}
+.box .shopName{
+    font-size: 0.3rem;
+    line-height: 1rem;
+}
+.box .shopPrice{
+    font-size: 0.3rem;
+    line-height: 1rem;
+}
+.box buttom{
+    width: auto;
+    height: 1rem;
+    border-radius: 100%;
+    display: flex;
+    font-size: 0.3rem;
+    margin-top: 0.3rem;
+}
+buttom .icon-jian{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    color: #00ff9c;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.4rem;
+}
+buttom .icon-jiahao{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    color: #000000;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.4rem;
+    background: #00ff9c;
+    border-radius: 50%;
+}
+buttom p{
+    line-height: 0.4rem;
+}
+
+
+
